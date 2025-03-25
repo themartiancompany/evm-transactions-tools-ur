@@ -103,7 +103,7 @@ _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
 _archive_sum='6a12401930bdad022c2823152b70266040334d00e89f5d53bd35329123030194'
 _evmfs_archive_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sum}"
 _evmfs_archive_src="${_tarname}.zip::${_evmfs_archive_uri}"
-_archive_sig_sum='bd2bd7d65233ac2714dbde8d0ad5cee70f6dcbab97e7ac427a2568c53389f812'
+_archive_sig_sum="62c5d1796269959a82b61d8e770fa78b8457a9574ee0a09ef81911e9596a6a0a"
 _archive_sig_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sig_sum}"
 _archive_sig_src="${_tarname}.zip.sig::${_archive_sig_uri}"
 if [[ "${_evmfs}" == "true" ]]; then
