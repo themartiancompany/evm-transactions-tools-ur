@@ -43,12 +43,13 @@ _node="nodejs"
 _offline="false"
 _git="false"
 _py="python"
-pkgname=evm-contracts-tools
-pkgver="0.0.0.0.0.0.0.0.1.1"
-_commit="1aff2be1eb37ea1b80b10db6cb8d1bb84c1306ee"
+pkgname=evm-transactions-tools
+pkgver="0.0.0.0.0.0.0.0.0.0.0.1"
+_commit="f0d821732b58525820f04951280a8d1b1f1808bd"
 pkgrel=1
 _pkgdesc=(
-  "EVM networks smart contracts tools."
+  "Ethereum Virtual Machine (EVM)"
+  "compatible networks' transactions tools."
 )
 pkgdesc="${_pkgdesc[*]}"
 arch=(
@@ -61,10 +62,9 @@ license=(
   'AGPL3'
 )
 depends=(
-  "evm-chains-explorers"
   "evm-chains-info"
-  "evm-contracts-abi-get"
   "evm-wallet"
+  "jq"
   "libcrash-bash"
   "libcrash-js"
   "node-run"
@@ -99,7 +99,7 @@ fi
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
-_archive_sum="5bb71ffe12bda6ed2a03851295cff32498de07b0f1305e5a9926027444208c25"
+_archive_sum='abc19999ef5f01f791fc21072a9269cb2d5a669c448615527fcf82d175bbf17d'
 _evmfs_archive_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sum}"
 _evmfs_archive_src="${_tarname}.zip::${_evmfs_archive_uri}"
 _archive_sig_sum='bd2bd7d65233ac2714dbde8d0ad5cee70f6dcbab97e7ac427a2568c53389f812'
@@ -162,6 +162,11 @@ package() {
     PREFIX="/usr" \
     DESTDIR="${pkgdir}" \
     install
+  install \
+    -Dm644 \
+    "COPYING" \
+    -t \
+    "${pkgdir}/usr/share/licenses/${pkgname}/"
 }
 
 # vim: ft=sh syn=sh et
