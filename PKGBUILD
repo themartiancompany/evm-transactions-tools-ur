@@ -45,7 +45,7 @@ _git="false"
 _py="python"
 pkgname=evm-transactions-tools
 pkgver="0.0.0.0.0.0.0.0.0.0.0.1"
-_commit="f0d821732b58525820f04951280a8d1b1f1808bd"
+_commit="cfa6c729bfde3b359f9f830762492c786a1ecc42"
 pkgrel=1
 _pkgdesc=(
   "Ethereum Virtual Machine (EVM)"
