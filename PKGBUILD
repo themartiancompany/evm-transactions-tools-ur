@@ -67,6 +67,7 @@ depends=(
   "jq"
   "libcrash-bash"
   "libcrash-js"
+  "libevm"
   "node-run"
   "${_node}-ethers"
 )
@@ -99,7 +100,7 @@ fi
 _evmfs_network="100"
 _evmfs_address="0x69470b18f8b8b5f92b48f6199dcb147b4be96571"
 _evmfs_ns="0x87003Bd6C074C713783df04f36517451fF34CBEf"
-_archive_sum='abc19999ef5f01f791fc21072a9269cb2d5a669c448615527fcf82d175bbf17d'
+_archive_sum='6a12401930bdad022c2823152b70266040334d00e89f5d53bd35329123030194'
 _evmfs_archive_uri="evmfs://${_evmfs_network}/${_evmfs_address}/${_evmfs_ns}/${_archive_sum}"
 _evmfs_archive_src="${_tarname}.zip::${_evmfs_archive_uri}"
 _archive_sig_sum='bd2bd7d65233ac2714dbde8d0ad5cee70f6dcbab97e7ac427a2568c53389f812'
