@@ -46,10 +46,14 @@ _node="nodejs"
 _offline="false"
 _git="false"
 _py="python"
-pkgname=evm-transactions-tools
+_pkg=evm-transactions-tools
+pkgbase="${_pkg}"
+pkgname=(
+  "${pkgbase}"
+)
 pkgver="0.0.0.0.0.0.0.0.0.0.0.1"
 _commit="cfa6c729bfde3b359f9f830762492c786a1ecc42"
-pkgrel=3
+pkgrel=4
 _pkgdesc=(
   "Ethereum Virtual Machine (EVM)"
   "compatible networks' transactions tools."
