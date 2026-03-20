@@ -49,7 +49,7 @@ _py="python"
 pkgname=evm-transactions-tools
 pkgver="0.0.0.0.0.0.0.0.0.0.0.1"
 _commit="cfa6c729bfde3b359f9f830762492c786a1ecc42"
-pkgrel=2
+pkgrel=3
 _pkgdesc=(
   "Ethereum Virtual Machine (EVM)"
   "compatible networks' transactions tools."
